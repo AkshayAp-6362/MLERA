@@ -1,0 +1,124 @@
+.about {
+    position: relative;
+    background: var(--bg-color);
+}
+
+.about-grid {
+    align-items: center;
+    gap: 4rem;
+}
+
+.about-text {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.about-text.highlight {
+    color: var(--text-primary);
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--accent-secondary);
+}
+
+.about-visual {
+    position: relative;
+}
+
+.visual-backdrop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle at center, rgba(139, 92, 246, 0.15), transparent 70%);
+    z-index: 0;
+}
+
+.visual-card {
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.visual-header {
+    height: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.dot.red {
+    background: #ef4444;
+}
+
+.dot.yellow {
+    background: #f59e0b;
+}
+
+.dot.green {
+    background: #10b981;
+}
+
+.visual-body {
+    padding: 2rem;
+    font-family: 'Fira Code', monospace, sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    background: #090a0f;
+}
+
+.code-line {
+    color: #e5e7eb;
+}
+
+.code-line.empty {
+    height: 1.8rem;
+}
+
+.code-line.strike {
+    text-decoration: line-through;
+    color: var(--text-muted);
+}
+
+.keyword {
+    color: #f472b6;
+}
+
+.module {
+    color: #38bdf8;
+}
+
+.function {
+    color: #a78bfa;
+}
+
+.variable {
+    color: #34d399;
+}
+
+.comment {
+    color: #6b7280;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .about-grid {
+        gap: 3rem;
+    }
+}

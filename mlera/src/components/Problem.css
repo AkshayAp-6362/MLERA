@@ -1,0 +1,55 @@
+.problem {
+    position: relative;
+    z-index: 10;
+}
+
+.problem-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem;
+    border-left: 4px solid var(--accent-primary);
+}
+
+.problem-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.problem-icon {
+    color: #ef4444;
+    /* Red for alert */
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.problem-text {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.problem-text:last-child {
+    margin-bottom: 0;
+}
+
+.problem-text.highlight {
+    color: var(--text-primary);
+    font-weight: 500;
+    border-radius: var(--radius-md);
+}
+
+@media (max-width: 768px) {
+    .problem-content {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .problem-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
